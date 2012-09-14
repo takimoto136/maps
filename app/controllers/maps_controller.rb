@@ -4,7 +4,7 @@ class MapsController < ApplicationController
   end
 
   def create
-   @latitude=params[lat]
-   @longitude=params[lon]
+   @latitude=params['map']['lat'].to_f
+   @longitude=params['map']['lon'].to_f
   end
 end

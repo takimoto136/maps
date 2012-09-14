@@ -1,4 +1,5 @@
-<%= form_for @map, :url => {:action => 'create'}, :html => {:method => 'get'} do |f|%>
-
+<%= form_for (@map) do |f|%>
+<%= f.text_field :lon %>
+<%= f.text_field :lat %>
 <%= f.submit :send %>
 <% end %>
