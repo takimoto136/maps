@@ -1,5 +1,9 @@
+
 <%= form_for (@map) do |f|%>
-<%= f.text_field :lon %>
-<%= f.text_field :lat %>
+<p>
+lon:<%= f.text_field :lon %>
+
+lat:<%= f.text_field :lat %>
 <%= f.submit :send %>
+</p>
 <% end %>
