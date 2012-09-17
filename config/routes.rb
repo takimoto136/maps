@@ -1,6 +1,8 @@
 Maps::Application.routes.draw do
   resources :maps
   resources :samples
+  root :to => 'maps#index'
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

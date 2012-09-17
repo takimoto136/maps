@@ -1,9 +1,16 @@
 
 <%= form_for (@map) do |f|%>
 <p>
-lon:<%= f.text_field :lon %>
-
-lat:<%= f.text_field :lat %>
+longitude:<%= f.text_field :lon %>
+<BR>
+latitude:<%= f.text_field :lat %>
+<BR>
 <%= f.submit :send %>
 </p>
+<BR><BR>
+<%= link_to "drow maps",maps_path %>
+<BR><BR>
+longitudes scope is 0~180<BR>
+latitudes scope is -85~85
+
 <% end %>
